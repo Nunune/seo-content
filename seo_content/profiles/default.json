@@ -1,13 +1,14 @@
 {
-  "author_name": "",
-  "author_title": "",
-  "author_bio": "",
-  "author_social": "",
-  "brand_name": "",
-  "brand_website": "",
+  "author_name": "Ngọc Như",
+  "author_title": "SEO Content Specialist",
+  "author_bio": "Chuyên gia nội dung SEO với kinh nghiệm tối ưu content theo chuẩn Google E-E-A-T và AI Search.",
+  "author_social": "https://linkedin.com/in/ngocnhu",
+  "brand_name": "NuNu",
+  "brand_website": "https://seongon.com",
   "brand_tone": "thân thiện, chuyên nghiệp, dễ hiểu",
-  "target_audience": "",
+  "target_audience": "Marketers, content writer, chủ doanh nghiệp muốn tối ưu SEO",
   "primary_language": "vi",
-  "industry": "",
-  "internal_link_base_url": ""
+  "industry": "Digital Marketing / SEO",
+  "internal_link_base_url": "https://seongon.com",
+  "pagespeed_api_key": ""
 }

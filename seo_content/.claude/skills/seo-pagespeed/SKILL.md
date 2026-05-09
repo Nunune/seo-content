@@ -5,15 +5,20 @@ description: |
   Kích hoạt khi user yêu cầu "kiểm tra tốc độ", "check pagespeed", "core web vitals",
   "kiểm tra LCP CLS INP", "tốc độ tải trang", "pagespeed score", "lighthouse score",
   "check performance", "tối ưu tốc độ", "web vitals", "kiểm tra website".
-argument-hint: --url https://example.com [--strategy mobile|desktop|both] [--keyword "từ khóa"]
+argument-hint: --url https://example.com [--apikey YOUR_KEY] [--strategy mobile|desktop|both] [--keyword "từ khóa"]
 allowed-tools: [WebFetch, Read, Write]
 ---
 
 # SEO PageSpeed — Kiểm tra Core Web Vitals qua API
 
-Gọi Google PageSpeed Insights API (không cần API key) để lấy điểm Lighthouse và
-số liệu Core Web Vitals thực tế từ dữ liệu người dùng thật (CrUX). Lưu báo cáo
-Markdown và JSON sẵn sàng theo dõi tiến độ tối ưu.
+Gọi Google PageSpeed Insights API để lấy điểm Lighthouse và số liệu Core Web Vitals
+thực tế từ dữ liệu người dùng thật (CrUX). Lưu báo cáo Markdown và JSON.
+
+**Yêu cầu API key** (miễn phí, 25.000 req/ngày):
+1. Vào https://console.cloud.google.com/apis/credentials → "Create credentials" → "API key"
+2. Enable "PageSpeed Insights API" tại https://console.cloud.google.com/apis/library
+3. Lưu key vào `D:\Nunu-Claude\seo_content\profiles\default.json` trường `pagespeed_api_key`
+   hoặc truyền qua `--apikey YOUR_KEY`
 
 ## Arguments
 
@@ -21,10 +26,16 @@ User đã gọi với: $ARGUMENTS
 
 Parse arguments:
 - `--url https://...` — **BẮT BUỘC**: URL cần kiểm tra
+- `--apikey KEY` — Google PageSpeed API key (ưu tiên hơn profile)
 - `--strategy mobile|desktop|both` — thiết bị kiểm tra (mặc định: both)
 - `--keyword "X"` — từ khóa SEO của trang (dùng để đặt tên file)
 
 Nếu không có `--url`, hỏi user trước khi tiếp tục.
+
+**Xác định API key:**
+1. Nếu có `--apikey KEY`: dùng key đó
+2. Nếu không: đọc `D:\Nunu-Claude\seo_content\profiles\default.json`, lấy `pagespeed_api_key`
+3. Nếu không có key: thông báo và hướng dẫn tạo key (xem phần đầu)
 
 ## Quy trình thực hiện
 
@@ -34,12 +45,12 @@ Gọi API cho từng strategy được yêu cầu bằng WebFetch:
 
 **Mobile:**
 ```
-https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={URL}&strategy=mobile
+https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={URL}&strategy=mobile&key={API_KEY}
 ```
 
 **Desktop:**
 ```
-https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={URL}&strategy=desktop
+https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={URL}&strategy=desktop&key={API_KEY}
 ```
 
 Nếu `--strategy both` (mặc định): gọi cả 2 URL. Nếu chỉ `mobile` hoặc `desktop`: gọi 1 URL.
