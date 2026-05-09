@@ -1,0 +1,34 @@
+{
+  "keyword": "ứng dụng AI vào SEO",
+  "source": "seo_content/output/draft_ung-dung-ai-vao-seo.md",
+  "audited_at": "2026-05-09T00:00:00+07:00",
+  "total_score": 81,
+  "grade": "pass",
+  "phases": {
+    "phase1_research": { "score": 10, "max": 10, "status": "pass" },
+    "phase2_structure": { "score": 14, "max": 15, "status": "pass" },
+    "phase3_eeeat": { "score": 26, "max": 30, "status": "pass" },
+    "phase4_media": { "score": 5, "max": 10, "status": "warn" },
+    "phase5_linking": { "score": 6, "max": 10, "status": "warn" },
+    "phase6_technical": { "score": 6, "max": 10, "status": "warn" },
+    "phase7a_geo": { "score": 7, "max": 7, "status": "pass" },
+    "phase7b_aio": { "score": 7, "max": 8, "status": "pass" }
+  },
+  "critical_issues": [
+    "Internal links chưa được nhúng vào nội dung thân bài — chỉ nằm trong comment",
+    "External links (BrightEdge, HubSpot, Earthweb, Firework) không có hyperlink thực tế",
+    "Alt text ảnh hoàn toàn vắng mặt — không có thẻ <img> hoặc gợi ý alt text"
+  ],
+  "warnings": [
+    "3 H2 chưa ở dạng câu hỏi: 'AI Đang Thay Đổi SEO Như Thế Nào?', '10 Công Cụ AI SEO Tốt Nhất 2025', 'Xu Hướng AI SEO 2025–2026'",
+    "Không có JSON-LD schema trong file draft — cần thêm Article + FAQPage schema trước khi đăng",
+    "Thiếu case study first-hand (trải nghiệm thực tế của tác giả) — chỉ có ví dụ tổng quát",
+    "Link Wikipedia cho NLP, LLM, Machine Learning chưa được thêm"
+  ],
+  "suggestions": [
+    "Thêm 1 case study thực tế với số liệu cụ thể (VD: tăng X% traffic sau Y tuần dùng AI SEO)",
+    "Chuyển 'Xu Hướng AI SEO 2025–2026' thành 'Xu Hướng AI SEO 2025–2026 Nào Cần Theo Dõi?'",
+    "Thêm Original Research: 1 khảo sát nội bộ hoặc quan điểm độc quyền về AI SEO tại thị trường Việt Nam",
+    "Bổ sung dateModified schema và freshness signal 'Cập nhật: tháng 5/2025' ở đầu bài"
+  ]
+}
