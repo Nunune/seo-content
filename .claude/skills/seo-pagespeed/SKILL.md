@@ -114,8 +114,8 @@ Tạo slug:
 - Nếu không có: lấy hostname của URL (VD: `example-com`)
 
 Lưu 2 file:
-- `D:\Nunu-Claude\seo_content\pagespeed_{slug}.md`
-- `D:\Nunu-Claude\seo_content\pagespeed_{slug}.json`
+- `D:\Nunu-Claude\seo_content\output\pagespeed_{slug}.md`
+- `D:\Nunu-Claude\seo_content\output\pagespeed_{slug}.json`
 
 ## Định dạng file pagespeed_{slug}.md
 

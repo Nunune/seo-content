@@ -126,8 +126,8 @@ Với MỖI lỗi ❌ và ⚠️: đưa ví dụ cụ thể:
 
 Tạo slug: từ keyword hoặc H1 (ASCII, gạch ngang, không dấu).
 
-Lưu báo cáo Markdown: `D:\Nunu-Claude\seo_content\audit_{slug}.md`
-Lưu điểm JSON: `D:\Nunu-Claude\seo_content\audit_{slug}.json`
+Lưu báo cáo Markdown: `D:\Nunu-Claude\seo_content\output\audit_{slug}.md`
+Lưu điểm JSON: `D:\Nunu-Claude\seo_content\output\audit_{slug}.json`
 
 ## Định dạng file audit_{slug}.md
 

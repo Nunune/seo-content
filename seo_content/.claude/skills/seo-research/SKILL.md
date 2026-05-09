@@ -95,7 +95,7 @@ Dùng thông tin này để customize outline phù hợp với thương hiệu.
 Tạo slug từ keyword (chuyển sang ASCII, thay dấu cách bằng `-`, bỏ dấu tiếng Việt).
 Ví dụ: "học lái xe ô tô" → `hoc-lai-xe-o-to`
 
-Lưu file tại: `D:\Nunu-Claude\seo_content\research_{slug}.md`
+Lưu file tại: `D:\Nunu-Claude\seo_content\output\research_{slug}.md`
 
 ## Định dạng file output
 
@@ -213,4 +213,4 @@ Sau khi lưu file, báo cáo ngắn gọn:
 - Search intent được xác định
 - Số đối thủ đã phân tích
 - Top 3 content gap quan trọng nhất
-- Gợi ý: "Dùng `/seo-write --keyword "{keyword}" --research seo_content/research_{slug}.md` để viết bài"
+- Gợi ý: "Dùng `/seo-write --keyword "{keyword}" --research seo_content/output/research_{slug}.md` để viết bài"

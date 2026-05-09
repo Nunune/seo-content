@@ -105,7 +105,7 @@ Viết bài theo cấu trúc dưới đây. **Áp dụng nghiêm ngặt mọi ng
 Tạo slug từ keyword: ASCII, gạch ngang, không dấu, không stopword.
 Ví dụ: "hướng dẫn học lái xe ô tô 2025" → `hoc-lai-xe-o-to-2025`
 
-Lưu tại: `D:\Nunu-Claude\seo_content\draft_{slug}.md`
+Lưu tại: `D:\Nunu-Claude\seo_content\output\draft_{slug}.md`
 
 ## Định dạng file output
 
@@ -200,4 +200,4 @@ Sau khi lưu file, báo cáo:
 - Tiêu đề được chọn
 - Danh sách TODO cần làm trước khi đăng
 - Schema types gợi ý cần cài
-- Gợi ý: "Dùng `/seo-audit --file seo_content/draft_{slug}.md` để kiểm tra chất lượng trước khi đăng"
+- Gợi ý: "Dùng `/seo-audit --file seo_content/output/draft_{slug}.md` để kiểm tra chất lượng trước khi đăng"

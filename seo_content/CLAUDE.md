@@ -17,10 +17,10 @@ Bộ công cụ viết và tối ưu nội dung SEO theo chuẩn Google 2025-202
 /seo-research → /seo-write → /seo-audit → /seo-pagespeed
 ```
 
-1. **Research**: phân tích SERP, đối thủ, content gap → `research_{slug}.md`
-2. **Write**: viết bài hoàn chỉnh E-E-A-T + GEO → `draft_{slug}.md`
-3. **Audit**: chấm điểm 7 giai đoạn (0-100) → `audit_{slug}.md` + `audit_{slug}.json`
-4. **PageSpeed**: kiểm tra Core Web Vitals thực tế → `pagespeed_{slug}.md` + `pagespeed_{slug}.json`
+1. **Research**: phân tích SERP, đối thủ, content gap → `output/research_{slug}.md`
+2. **Write**: viết bài hoàn chỉnh E-E-A-T + GEO → `output/draft_{slug}.md`
+3. **Audit**: chấm điểm 7 giai đoạn (0-100) → `output/audit_{slug}.md` + `output/audit_{slug}.json`
+4. **PageSpeed**: kiểm tra Core Web Vitals thực tế → `output/pagespeed_{slug}.md` + `output/pagespeed_{slug}.json`
 
 ## Cấu trúc
 
@@ -28,21 +28,22 @@ Bộ công cụ viết và tối ưu nội dung SEO theo chuẩn Google 2025-202
 seo_content/
   .claude/
     skills/
-      seo-research/SKILL.md    # Nghiên cứu từ khóa & SERP
-      seo-write/SKILL.md       # Viết bài chuẩn SEO
-      seo-audit/SKILL.md       # Chấm điểm content
+      seo-research/SKILL.md    # Nghiên cứu từ khóa & SERP       ← INPUT
+      seo-write/SKILL.md       # Viết bài chuẩn SEO               ← INPUT
+      seo-audit/SKILL.md       # Chấm điểm content                ← INPUT
       seo-pagespeed/
-        SKILL.md               # Kiểm tra Core Web Vitals
-        thresholds.json        # Ngưỡng GOOD/NEEDS IMPROVEMENT/POOR
+        SKILL.md               # Kiểm tra Core Web Vitals          ← INPUT
+        thresholds.json        # Ngưỡng GOOD/NEEDS IMPROVEMENT/POOR ← INPUT
   profiles/
-    default.json               # Thông tin tác giả & thương hiệu (điền 1 lần)
-  checklist.md                 # Checklist 8 giai đoạn đầy đủ (tài liệu tham chiếu)
-  research_{slug}.md           # Output: research brief
-  draft_{slug}.md              # Output: bài viết hoàn chỉnh
-  audit_{slug}.md              # Output: báo cáo audit dạng đọc
-  audit_{slug}.json            # Output: điểm số cấu trúc JSON
-  pagespeed_{slug}.md          # Output: báo cáo Core Web Vitals
-  pagespeed_{slug}.json        # Output: điểm PageSpeed JSON
+    default.json               # Thông tin tác giả & thương hiệu   ← INPUT
+  checklist.md                 # Checklist 8 giai đoạn đầy đủ      ← INPUT
+  output/                      # ← TẤT CẢ KẾT QUẢ TỪ SKILL
+    research_{slug}.md         # Research brief
+    draft_{slug}.md            # Bài viết hoàn chỉnh
+    audit_{slug}.md            # Báo cáo audit dạng đọc
+    audit_{slug}.json          # Điểm số cấu trúc JSON
+    pagespeed_{slug}.md        # Báo cáo Core Web Vitals
+    pagespeed_{slug}.json      # Điểm PageSpeed JSON
 ```
 
 ## Cấu hình lần đầu
@@ -79,10 +80,10 @@ seo_content/
 /seo-research --keyword "học lái xe ô tô"
 
 # Viết bài dùng research có sẵn
-/seo-write --keyword "học lái xe ô tô" --research research_hoc-lai-xe-o-to.md
+/seo-write --keyword "học lái xe ô tô" --research output/research_hoc-lai-xe-o-to.md
 
 # Audit bài trước khi đăng
-/seo-audit --file draft_hoc-lai-xe-o-to.md
+/seo-audit --file output/draft_hoc-lai-xe-o-to.md
 
 # Kiểm tra tốc độ trang đã đăng
 /seo-pagespeed --url https://example.com/hoc-lai-xe-o-to
