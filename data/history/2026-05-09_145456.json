@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-05-09T14:54:56.901021",
+  "results": [
+    {
+      "keyword": "bảo hiểm xe máy",
+      "location": "Hà Nội",
+      "ads": [],
+      "error": "Page.goto: net::ERR_TIMED_OUT at https://www.google.com.vn/search?q=b%E1%BA%A3o%20hi%E1%BB%83m%20xe%20m%C3%A1y&gl=vn&hl=vi&pws=0&num=10\nCall log:\n  - navigating to \"https://www.google.com.vn/search?q=b%E1%BA%A3o%20hi%E1%BB%83m%20xe%20m%C3%A1y&gl=vn&hl=vi&pws=0&num=10\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "keyword": "dịch vụ kế toán",
+      "location": "TP. HCM",
+      "ads": [],
+      "error": "Page.goto: net::ERR_TIMED_OUT at https://www.google.com.vn/search?q=d%E1%BB%8Bch%20v%E1%BB%A5%20k%E1%BA%BF%20to%C3%A1n&gl=vn&hl=vi&pws=0&num=10\nCall log:\n  - navigating to \"https://www.google.com.vn/search?q=d%E1%BB%8Bch%20v%E1%BB%A5%20k%E1%BA%BF%20to%C3%A1n&gl=vn&hl=vi&pws=0&num=10\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "keyword": "tour du lịch Đà Lạt",
+      "location": "Đà Lạt",
+      "ads": [],
+      "error": "Page.goto: net::ERR_TIMED_OUT at https://www.google.com.vn/search?q=tour%20du%20l%E1%BB%8Bch%20%C4%90%C3%A0%20L%E1%BA%A1t&gl=vn&hl=vi&pws=0&num=10\nCall log:\n  - navigating to \"https://www.google.com.vn/search?q=tour%20du%20l%E1%BB%8Bch%20%C4%90%C3%A0%20L%E1%BA%A1t&gl=vn&hl=vi&pws=0&num=10\", waiting until \"domcontentloaded\"\n"
+    }
+  ]
+}

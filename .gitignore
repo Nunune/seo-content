@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+.env
+
+# Credentials — KHÔNG BAO GIỜ commit key thật
+credentials/service_account.json
+credentials/*.json
+!credentials/README.txt
+
+# Tor runtime data
+data/tor_data/
+
+# Claude Code local config
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-05-09T14:34:02.443305",
+  "results": [
+    {
+      "keyword": "bảo hiểm xe máy",
+      "location": "Hà Nội",
+      "ads": [],
+      "captcha": true,
+      "error": "CAPTCHA detected. Thử lại với --headed hoặc chờ vài phút."
+    },
+    {
+      "keyword": "dịch vụ kế toán",
+      "location": "TP. HCM",
+      "ads": [],
+      "captcha": true,
+      "error": "CAPTCHA detected. Thử lại với --headed hoặc chờ vài phút."
+    },
+    {
+      "keyword": "tour du lịch Đà Lạt",
+      "location": "Đà Lạt",
+      "ads": [],
+      "captcha": true,
+      "error": "CAPTCHA detected. Thử lại với --headed hoặc chờ vài phút."
+    }
+  ]
+}
