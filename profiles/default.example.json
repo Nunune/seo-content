@@ -1,0 +1,15 @@
+{
+  "author_name": "Tên tác giả",
+  "author_title": "Chức danh",
+  "author_bio": "Mô tả ngắn về tác giả.",
+  "author_social": "https://linkedin.com/in/username",
+  "brand_name": "Tên thương hiệu",
+  "brand_website": "https://example.com",
+  "brand_tone": "thân thiện, chuyên nghiệp, dễ hiểu",
+  "target_audience": "Đối tượng mục tiêu",
+  "primary_language": "vi",
+  "industry": "Lĩnh vực",
+  "internal_link_base_url": "https://example.com",
+  "pagespeed_api_key": "YOUR_GOOGLE_PAGESPEED_API_KEY",
+  "drive_folder_id": "YOUR_GOOGLE_DRIVE_FOLDER_ID"
+}

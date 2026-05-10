@@ -21,3 +21,6 @@ playwright-report/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Sensitive config — chứa API key và credentials
+profiles/default.json
