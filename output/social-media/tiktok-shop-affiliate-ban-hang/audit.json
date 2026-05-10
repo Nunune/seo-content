@@ -1,0 +1,32 @@
+{
+  "keyword": "TikTok Shop Affiliate và bán hàng TikTok Shop",
+  "source": "seo_content/output/social-media/tiktok-shop-affiliate-ban-hang/draft.md",
+  "audited_at": "2026-05-10T00:00:00+07:00",
+  "total_score": 88,
+  "grade": "pass",
+  "improve_log": [
+    { "round": 0, "score": 83, "notes": "Initial audit" },
+    { "round": 1, "score": 88, "fixed": ["Phase 5: nhúng 4 internal links vào body", "Phase 7B: thêm disambiguation Affiliate TikTok vs Affiliate Marketing thông thường"] }
+  ],
+  "phases": {
+    "phase1_research": { "score": 9, "max": 10, "status": "pass" },
+    "phase2_structure": { "score": 13, "max": 15, "status": "pass" },
+    "phase3_eeeat": { "score": 26, "max": 30, "status": "pass" },
+    "phase4_media": { "score": 7, "max": 10, "status": "warn" },
+    "phase5_linking": { "score": 9, "max": 10, "status": "pass" },
+    "phase6_technical": { "score": 9, "max": 10, "status": "pass" },
+    "phase7a_geo": { "score": 7, "max": 7, "status": "pass" },
+    "phase7b_aio": { "score": 8, "max": 8, "status": "pass" }
+  },
+  "critical_issues": [],
+  "warnings": [
+    "Title tag 61 ký tự — vượt chuẩn 1 ký tự (không critical)",
+    "Ảnh chưa tạo — chỉ có placeholder comments, cần chạy /seo-image",
+    "Thiếu case study thực tế — ví dụ tính toán hiện tại là số ước tính lý thuyết"
+  ],
+  "suggestions": [
+    "Thêm 1 case study thực tế (creator hoặc seller với tên/số liệu cụ thể)",
+    "Sau khi bài 'hướng dẫn mở gian hàng TikTok Shop' được viết, nhúng link vào section Seller",
+    "FAQ: thêm 'TikTok Shop Affiliate có hợp pháp không?' — PAA phổ biến"
+  ]
+}

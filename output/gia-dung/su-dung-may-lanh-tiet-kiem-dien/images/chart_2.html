@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chi Phí Điện Máy Lạnh Mỗi Tháng</title>
+  <style>
+    body { margin: 0; background: #FFFFFF; display: flex; justify-content: center; padding: 20px; font-family: Arial, sans-serif; }
+  </style>
+</head>
+<body>
+  <canvas id="myChart" width="900" height="520"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['1 HP\n(9.000 BTU)', '1.5 HP\n(12.000 BTU)', '2 HP\n(18.000 BTU)', '2.5 HP\n(24.000 BTU)'],
+        datasets: [
+          {
+            label: '6 giờ/ngày',
+            data: [89400, 134000, 178700, 223400],
+            backgroundColor: '#3B82F6',
+            borderColor: '#2563EB',
+            borderWidth: 1,
+            borderRadius: 3
+          },
+          {
+            label: '8 giờ/ngày',
+            data: [119200, 178600, 238300, 297800],
+            backgroundColor: '#10B981',
+            borderColor: '#059669',
+            borderWidth: 1,
+            borderRadius: 3
+          },
+          {
+            label: '10 giờ/ngày',
+            data: [149000, 223300, 297800, 372300],
+            backgroundColor: '#F59E0B',
+            borderColor: '#D97706',
+            borderWidth: 1,
+            borderRadius: 3
+          }
+        ]
+      },
+      options: {
+        responsive: false,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Chi Phí Điện Máy Lạnh Mỗi Tháng (VNĐ)',
+            font: { size: 18, family: 'Arial', weight: 'bold' },
+            color: '#111827',
+            padding: { top: 10, bottom: 6 }
+          },
+          subtitle: {
+            display: true,
+            text: 'Giá điện bậc 3: 2.858 đ/kWh (EVN, 2024) · Hệ số tải thực tế: 0.7 · Máy Inverter tiết kiệm thêm 15–20%',
+            font: { size: 12, family: 'Arial' },
+            color: '#6B7280',
+            padding: { bottom: 16 }
+          },
+          legend: {
+            position: 'top',
+            labels: {
+              font: { size: 13, family: 'Arial' },
+              color: '#374151',
+              padding: 16
+            }
+          },
+          tooltip: {
+            callbacks: {
+              label: ctx => ' ' + ctx.dataset.label + ': ' + ctx.parsed.y.toLocaleString('vi-VN') + ' đ/tháng'
+            }
+          }
+        },
+        scales: {
+          y: {
+            title: {
+              display: true,
+              text: 'Chi phí điện (đồng/tháng)',
+              font: { size: 12, family: 'Arial' },
+              color: '#374151'
+            },
+            ticks: {
+              callback: v => (v / 1000).toLocaleString('vi-VN') + 'k',
+              font: { size: 12, family: 'Arial' },
+              color: '#374151'
+            },
+            grid: { color: '#E5E7EB' }
+          },
+          x: {
+            ticks: {
+              font: { size: 12, family: 'Arial' },
+              color: '#374151'
+            },
+            grid: { display: false }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "keyword": "cho thuê căn hộ Novaland Phổ Quang",
+  "source": "seo_content/output/draft_cho-thue-can-ho-novaland-pho-quang.md",
+  "audited_at": "2026-05-09T00:00:00+07:00",
+  "total_score": 70,
+  "grade": "warn",
+  "phases": {
+    "phase1_research": { "score": 7, "max": 10, "status": "warn" },
+    "phase2_structure": { "score": 13, "max": 15, "status": "pass" },
+    "phase3_eeeat": { "score": 22, "max": 30, "status": "warn" },
+    "phase4_media": { "score": 6, "max": 10, "status": "warn" },
+    "phase5_linking": { "score": 5, "max": 10, "status": "fail" },
+    "phase6_technical": { "score": 6, "max": 10, "status": "warn" },
+    "phase7a_geo": { "score": 6, "max": 7, "status": "pass" },
+    "phase7b_aio": { "score": 5, "max": 8, "status": "warn" }
+  },
+  "critical_issues": [
+    "Không có external link nào đến nguồn uy tín (0/2–3 link yêu cầu)",
+    "Bảng giá không có nguồn trích dẫn — ảnh hưởng E-E-A-T và Trust",
+    "Không có original research / thông tin độc quyền"
+  ],
+  "warnings": [
+    "Internal links chỉ là comment gợi ý, chưa nhúng vào thân bài",
+    "3 ảnh chỉ là placeholder, chưa có file thực",
+    "Schema JSON-LD chưa viết cụ thể",
+    "Thiếu disambiguation section (cho thuê vs mua)",
+    "Statistics chưa theo format chuẩn AIO (nguồn + năm)",
+    "2 H2 chưa dạng câu hỏi chuẩn PAA"
+  ],
+  "suggestions": [
+    "Thêm đoạn kinh nghiệm thực địa từ tác giả (tầng/hướng/tiếng ồn)",
+    "FAQ schema JSON-LD cho 5 câu hỏi sẵn có",
+    "Thêm section lưu ý hợp đồng cho người nước ngoài",
+    "Thêm ảnh nội thất căn hộ thực tế"
+  ]
+}

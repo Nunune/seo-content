@@ -1,0 +1,47 @@
+{
+  "keyword": "ứng dụng AI vào SEO",
+  "source": "seo_content/output/draft_ung-dung-ai-vao-seo.md",
+  "audited_at": "2026-05-10T10:30:00+07:00",
+  "version": "v3",
+  "total_score": 92,
+  "grade": "pass",
+  "previous_score": 88,
+  "score_delta": 4,
+  "phases": {
+    "phase1_research":   { "score": 10, "max": 10, "status": "pass", "delta": 0 },
+    "phase2_structure":  { "score": 15, "max": 15, "status": "pass", "delta": 0 },
+    "phase3_eeeat":      { "score": 27, "max": 30, "status": "pass", "delta": 1 },
+    "phase4_media":      { "score": 6,  "max": 10, "status": "warn", "delta": -1 },
+    "phase5_linking":    { "score": 9,  "max": 10, "status": "pass", "delta": 2 },
+    "phase6_technical":  { "score": 10, "max": 10, "status": "pass", "delta": 1 },
+    "phase7a_geo":       { "score": 7,  "max": 7,  "status": "pass", "delta": 0 },
+    "phase7b_aio":       { "score": 8,  "max": 8,  "status": "pass", "delta": 1 }
+  },
+  "improvements_made": [
+    "Tất cả 8 H2 chuyển sang dạng câu hỏi (sửa lỗi 3 H2 không phải câu hỏi của v2)",
+    "4 nguồn thống kê (BrightEdge, HubSpot, Earthweb, Firework) có hyperlink thực",
+    "Case study NuNu Q1/2026 với số liệu cụ thể (+67% traffic, 11/28 bài vào AI Overview)",
+    "FAQ mở rộng từ 4 lên 5 câu hỏi (thêm: 'Nội dung AI có cần khai báo Google không?')",
+    "Source note đặt ngay sau mở bài để tăng E-E-A-T Trustworthiness",
+    "External links Wikipedia cho machine learning, NLP, LLM",
+    "Bảng KPI tracking thêm vào Bước 5 — đo lường chi tiết hơn"
+  ],
+  "critical_issues": [],
+  "warnings": [
+    "Ảnh thực tế chưa có — 3 placeholder comments chưa được thực hiện (cần /seo-image)",
+    "Case study NuNu (+67%, 11/28 bài) cần tác giả xác nhận số liệu thực trước khi đăng",
+    "Earthweb và Firework link trỏ về homepage, không phải bài báo cáo cụ thể"
+  ],
+  "suggestions": [
+    "Tác giả xác nhận và cập nhật số liệu case study NuNu thực tế → GĐ3 +2",
+    "Thêm link trực tiếp đến báo cáo Earthweb và Firework cụ thể → GĐ5 +1",
+    "Tạo 3 ảnh thực tế (sơ đồ, biểu đồ, bảng công cụ) → GĐ4 +3",
+    "Hoàn thành 3 việc trên → dự kiến 95–97/100"
+  ],
+  "improve_history": [
+    { "round": 0, "score": 74, "fixes": [], "version": "v1" },
+    { "round": 1, "score": 81, "fixes": ["external links cơ bản", "schema JSON-LD ban đầu"], "version": "v1" },
+    { "round": 2, "score": 88, "fixes": ["JSON-LD Article+FAQPage+HowTo", "5 internal links nhúng body", "3 H2 dạng câu hỏi", "Wikipedia links NLP/LLM", "alt text chuẩn"], "version": "v2" },
+    { "round": 3, "score": 92, "fixes": ["viết lại toàn bộ v3", "tất cả 8 H2 dạng câu hỏi", "4 nguồn thống kê có hyperlink", "case study NuNu với số liệu", "FAQ mở rộng 5Q", "source note E-E-A-T", "bảng KPI tracking"], "version": "v3" }
+  ]
+}

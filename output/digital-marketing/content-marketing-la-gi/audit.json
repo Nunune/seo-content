@@ -1,0 +1,77 @@
+{
+  "keyword": "content marketing là gì",
+  "source": "seo_content/draft_content-marketing-la-gi.md",
+  "audited_at": "2026-05-09T18:00:00+07:00",
+  "total_score": 77,
+  "grade": "pass",
+  "phases": {
+    "phase1_research": {
+      "score": 9,
+      "max": 10,
+      "status": "pass",
+      "note": "Keyword map phong phú, sub-topic đầy đủ; PAA 5/5 được trả lời. Thiếu: phần SME budget hơi ngắn."
+    },
+    "phase2_structure": {
+      "score": 13,
+      "max": 15,
+      "status": "pass",
+      "note": "Title (52 ký tự), slug, H1 đạt chuẩn. Meta description thiếu CTA hành động rõ ràng."
+    },
+    "phase3_eeeat": {
+      "score": 25,
+      "max": 30,
+      "status": "pass",
+      "note": "Mở bài, thân bài, kết bài tốt. Case study SEONGON thiếu hard data; nguồn được trích nhưng chưa có external links."
+    },
+    "phase4_media": {
+      "score": 5,
+      "max": 10,
+      "status": "warn",
+      "note": "3 vị trí ảnh được lên kế hoạch. Chưa có alt text, WebP spec, width/height, lazy loading."
+    },
+    "phase5_linking": {
+      "score": 6,
+      "max": 10,
+      "status": "warn",
+      "note": "4 internal link gợi ý chất lượng cao — nhưng chỉ ở comment block, chưa nhúng vào nội dung. Không có external links embedded."
+    },
+    "phase6_technical": {
+      "score": 6,
+      "max": 10,
+      "status": "warn",
+      "note": "Schema types xác định đúng (Article, FAQPage, HowTo). Chưa có JSON-LD, Person schema, dateModified chưa điền."
+    },
+    "phase7a_geo": {
+      "score": 6,
+      "max": 7,
+      "status": "pass",
+      "note": "BLUF per section, Q&A rõ, 8 số liệu có nguồn, bảng so sánh đầy đủ. HTML/JS dependency không kiểm tra được trên draft."
+    },
+    "phase7b_aio": {
+      "score": 7,
+      "max": 8,
+      "status": "pass",
+      "note": "Direct Answer, TL;DR Box, Definition Block, Statistics, Comparison Tables, Disambiguation, Tone — đạt tốt. Question-based Headings chưa đầy đủ (3/8 H2 chưa là câu hỏi); Wikipedia links thiếu; Original Research yếu."
+    }
+  },
+  "critical_issues": [
+    "Internal links 4 anchor chỉ ở comment block — chưa nhúng vào nội dung bài viết",
+    "External links cho 8 nguồn trích dẫn chưa có hyperlink nào",
+    "Case study SEONGON thiếu số liệu cụ thể (traffic, conversion rate, organic keywords)"
+  ],
+  "warnings": [
+    "Meta description thiếu CTA rõ ràng (kết thúc bằng 'Cập nhật 05/2025' thay vì 'Đọc ngay!')",
+    "3/8 H2 chưa ở dạng câu hỏi: '8 Công Cụ...', 'Xu Hướng...', 'Case Study...'",
+    "Schema JSON-LD chưa được tạo — chỉ gợi ý types trong comment",
+    "Person schema (tác giả Ngọc Như) chưa có trong danh sách schema gợi ý",
+    "Alt text cho 3 ảnh placeholder chưa được viết",
+    "Wikipedia/Wikidata links cho entity quan trọng (CMI, E-E-A-T) chưa có",
+    "Original research / proprietary data còn yếu — case study thiếu hard data"
+  ],
+  "suggestions": [
+    "Tạo infographic gốc 'Vòng lặp Content Marketing' để tăng information gain và shareability",
+    "Thêm /llms.txt + robots.txt cho AI bot khi xuất bản",
+    "Thêm trích dẫn first-hand từ tác giả để tăng Experience trong E-E-A-T",
+    "Tạo interactive checklist trên Notion/Google Form để tăng engagement"
+  ]
+}

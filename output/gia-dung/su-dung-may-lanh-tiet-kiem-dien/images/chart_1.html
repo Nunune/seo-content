@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mức Tiêu Thụ Điện Theo Nhiệt Độ Cài Đặt Máy Lạnh</title>
+  <style>
+    body { margin: 0; background: #FFFFFF; display: flex; justify-content: center; padding: 20px; font-family: Arial, sans-serif; }
+  </style>
+</head>
+<body>
+  <canvas id="myChart" width="800" height="480"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['20°C', '22°C', '24°C (tham chiếu)', '26°C ⭐ (khuyến nghị)', '28°C'],
+        datasets: [{
+          label: 'Mức tiêu thụ điện tương đối (%)',
+          data: [150, 120, 100, 85, 70],
+          backgroundColor: ['#EF4444', '#F59E0B', '#6B7280', '#10B981', '#3B82F6'],
+          borderColor:      ['#DC2626', '#D97706', '#4B5563', '#059669', '#2563EB'],
+          borderWidth: 1,
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: false,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Mức Tiêu Thụ Điện Theo Nhiệt Độ Cài Đặt Máy Lạnh',
+            font: { size: 18, family: 'Arial', weight: 'bold' },
+            color: '#111827',
+            padding: { top: 10, bottom: 6 }
+          },
+          subtitle: {
+            display: true,
+            text: 'So sánh tương đối ở cùng điều kiện phòng | Nguồn: EVN, Panasonic Vietnam',
+            font: { size: 12, family: 'Arial' },
+            color: '#6B7280',
+            padding: { bottom: 20 }
+          },
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: ctx => ' Tiêu thụ điện: ' + ctx.parsed.y + '% so với mức cơ sở 24°C'
+            }
+          }
+        },
+        scales: {
+          y: {
+            min: 0,
+            max: 175,
+            title: {
+              display: true,
+              text: 'Mức tiêu thụ điện (%)',
+              font: { size: 13, family: 'Arial' },
+              color: '#374151'
+            },
+            ticks: {
+              callback: v => v + '%',
+              font: { size: 13, family: 'Arial' },
+              color: '#374151'
+            },
+            grid: { color: '#E5E7EB' }
+          },
+          x: {
+            ticks: {
+              font: { size: 13, family: 'Arial' },
+              color: '#374151'
+            },
+            grid: { display: false }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

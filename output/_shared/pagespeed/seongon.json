@@ -1,0 +1,48 @@
+{
+  "url": "https://seongon.com",
+  "keyword": "seongon",
+  "checked_at": "2026-05-09T16:45:00+07:00",
+  "mobile": {
+    "performance": 28,
+    "accessibility": 71,
+    "best_practices": 100,
+    "seo": 92,
+    "lcp_crux_ms": 1988,
+    "lcp_crux_cat": "FAST",
+    "inp_crux_ms": 221,
+    "inp_crux_cat": "AVERAGE",
+    "cls_crux": 0.0,
+    "cls_crux_cat": "FAST",
+    "crux_overall": "AVERAGE",
+    "lcp_lab": "23.7s",
+    "tbt_lab": "740ms",
+    "cls_lab": "0.395",
+    "fcp_lab": "2.3s",
+    "speed_index_lab": "8.1s"
+  },
+  "desktop": {
+    "performance": 52,
+    "accessibility": 80,
+    "best_practices": 81,
+    "seo": 100,
+    "lcp_crux_ms": 1163,
+    "lcp_crux_cat": "FAST",
+    "inp_crux_ms": 77,
+    "inp_crux_cat": "FAST",
+    "cls_crux": 0.0,
+    "cls_crux_cat": "FAST",
+    "crux_overall": "FAST",
+    "lcp_lab": "1.5s",
+    "tbt_lab": "570ms",
+    "cls_lab": "0.264",
+    "fcp_lab": "0.5s",
+    "speed_index_lab": "2.5s"
+  },
+  "top_opportunities": [
+    {
+      "title": "Reduce unused JavaScript",
+      "savings": "~761 KiB / ~1,350ms"
+    }
+  ],
+  "grade": "poor"
+}
