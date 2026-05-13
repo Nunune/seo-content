@@ -1,0 +1,48 @@
+{
+  "keyword": "hướng dẫn CapCut cho TikTok",
+  "source": "seo_content/output/social-media/huong-dan-capcut-cho-tiktok/draft.md",
+  "audited_at": "2026-05-10T00:00:00+07:00",
+  "total_score": 88,
+  "grade": "pass",
+  "phases": {
+    "phase1_research": { "score": 8, "max": 10, "status": "pass" },
+    "phase2_structure": { "score": 14, "max": 15, "status": "pass" },
+    "phase3_eeeat": { "score": 26, "max": 30, "status": "pass" },
+    "phase4_media": { "score": 7, "max": 10, "status": "pass" },
+    "phase5_linking": { "score": 9, "max": 10, "status": "pass" },
+    "phase6_technical": { "score": 9, "max": 10, "status": "pass" },
+    "phase7a_geo": { "score": 7, "max": 7, "status": "pass" },
+    "phase7b_aio": { "score": 8, "max": 8, "status": "pass" }
+  },
+  "critical_issues": [],
+  "warnings": [
+    "no first-hand experience paragraph",
+    "ảnh cần chụp thực tế của CapCut UI (không tự động tạo được)"
+  ],
+  "suggestions": [
+    "tác giả thêm 1 đoạn trải nghiệm cụ thể (VD: batch 5 video, tiết kiệm X giờ)",
+    "cân nhắc thêm section CapCut AI features (background remove, AI video)"
+  ],
+  "improve_history": [
+    {
+      "round": 0,
+      "score": 81,
+      "fixes": []
+    },
+    {
+      "round": 1,
+      "score": 88,
+      "fixes": [
+        "ByteDance entity link added (Wikipedia)",
+        "removed unsourced '500 triệu lượt tải' stat",
+        "capcut.com converted to hyperlink",
+        "embedded cach-chon-niche internal link after setup section",
+        "embedded kiem-tien internal link in kết luận",
+        "phase5_linking: 5→9 (3 embedded links + external links fixed)",
+        "phase3_eeeat: 25→26 (external stat source removed, entity links added)",
+        "phase7a_geo: 6→7 (stats all sourced or removed)",
+        "phase7b_aio: 7→8 (entity links complete)"
+      ]
+    }
+  ]
+}

@@ -5,7 +5,7 @@ description: |
   Kích hoạt khi user yêu cầu "audit bài viết", "kiểm tra SEO", "seo audit",
   "chấm điểm content", "review bài SEO", "kiểm tra chất lượng bài", "seo check",
   "đánh giá bài viết", "audit content", "check SEO score", "kiểm tra bài trước khi đăng".
-argument-hint: --file path/to/draft.md | --url https://example.com/bai-viet [--keyword "từ khóa"]
+argument-hint: --file output/{category}/{slug}/draft.md | --url https://example.com/bai-viet [--keyword "từ khóa"]
 allowed-tools: [WebFetch, Read, Write]
 ---
 
@@ -74,7 +74,13 @@ Ghi rõ từ khóa đã xác định vào đầu báo cáo.
 - Đề xuất thêm visual phù hợp chưa
 
 **Giai đoạn 5 — Linking (10 điểm):**
-- Internal links: số lượng 3-5 / anchor text tự nhiên / link đến pillar content
+
+Trước khi chấm Phase 5, đọc `D:\Nunu-Claude\seo_content\content-index.md` để biết danh sách bài đã tồn tại.
+
+- Internal links đã nhúng vào body: số lượng 3-5 / anchor text tự nhiên / link đến pillar content
+- **Phantom link check**: với mỗi slug trong `<!-- Internal Links gợi ý -->`, kiểm tra có trong content-index.md không
+  - ✅ Slug có trong index → link hợp lệ
+  - ⚠️ Slug KHÔNG có trong index → "phantom link" → ghi vào `warnings`, trừ 1pt/link (tối đa -2pt)
 - External links: có nguồn uy tín / 1-3 link / anchor text không spam
 
 **Giai đoạn 6 — Technical (10 điểm):**
@@ -122,14 +128,19 @@ Phân loại:
 Với MỖI lỗi ❌ và ⚠️: đưa ví dụ cụ thể:
 > "Hiện tại: X → Gợi ý sửa: Y"
 
-### Bước 7 — Tạo slug và lưu 2 file
+### Bước 7 — Xác định thư mục và lưu 2 file
 
 Tạo slug: từ keyword hoặc H1 (ASCII, gạch ngang, không dấu).
 
-Lưu báo cáo Markdown: `D:\Nunu-Claude\seo_content\output\audit_{slug}.md`
-Lưu điểm JSON: `D:\Nunu-Claude\seo_content\output\audit_{slug}.json`
+**Xác định thư mục bài viết:**
+- Nếu `--file` được cung cấp: lấy thư mục cha của file draft.
+  - VD: `output/digital-marketing/ung-dung-ai-vao-seo/draft.md` → thư mục = `output/digital-marketing/ung-dung-ai-vao-seo/`
+- Nếu `--url`: lưu vào `output/_shared/audits/` (không có category)
 
-## Định dạng file audit_{slug}.md
+Lưu báo cáo Markdown: `{thu_muc_bai_viet}\audit.md`
+Lưu điểm JSON: `{thu_muc_bai_viet}\audit.json`
+
+## Định dạng file audit.md
 
 ```markdown
 # Báo cáo SEO Audit: {Tiêu đề bài / Keyword}
@@ -241,7 +252,7 @@ Lưu điểm JSON: `D:\Nunu-Claude\seo_content\output\audit_{slug}.json`
 [Thêm FAQPage schema nếu bài có FAQ block]
 ```
 
-## Định dạng file audit_{slug}.json
+## Định dạng file audit.json
 
 ```json
 {
@@ -273,6 +284,6 @@ Lưu điểm JSON: `D:\Nunu-Claude\seo_content\output\audit_{slug}.json`
 Sau khi lưu cả 2 file, tóm tắt ngắn gọn:
 - Tổng điểm và xếp loại
 - Top 3 lỗi quan trọng nhất cần sửa ngay
-- Đường dẫn 2 file đã lưu
-- Nếu điểm < 75: "Sau khi sửa, chạy lại `/seo-audit` để kiểm tra lại"
+- Đường dẫn 2 file đã lưu: `output/{category}/{slug}/audit.md` và `audit.json`
+- Nếu điểm < 75: "Sau khi sửa, chạy lại `/seo-audit --file output/{category}/{slug}/draft.md` để kiểm tra lại"
 - Nếu điểm >= 75: "Bài đã đủ chất lượng để đăng. Xem TODO trong file draft trước."

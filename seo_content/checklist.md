@@ -109,6 +109,8 @@
 - [ ] 3-5 link nội bộ đến bài cùng topic cluster
 - [ ] Anchor text mô tả tự nhiên, không spam
 - [ ] Link đến trang quan trọng (pillar content, dịch vụ chính)
+- [ ] **Internal links phải trỏ đến slug có trong `content-index.md`** — không link đến bài chưa viết
+- [ ] Phantom link (slug không tồn tại) → đổi thành `<!-- TODO: thêm link khi bài "{chủ đề}" được viết -->`
 
 ### External links
 - [ ] 1-3 link ra nguồn uy tín (gov, edu, báo lớn, nghiên cứu)

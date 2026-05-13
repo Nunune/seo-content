@@ -1,0 +1,36 @@
+{
+  "keyword": "quy trình xây kênh tiktok từ con số 0",
+  "source": "seo_content/output/social-media/xay-kenh-tiktok-tu-con-so-0/draft.md",
+  "audited_at": "2026-05-10T08:00:00+07:00",
+  "total_score": 89,
+  "grade": "pass",
+  "phases": {
+    "phase1_research": { "score": 9, "max": 10, "status": "pass" },
+    "phase2_structure": { "score": 14, "max": 15, "status": "pass" },
+    "phase3_eeeat": { "score": 25, "max": 30, "status": "pass" },
+    "phase4_media": { "score": 8, "max": 10, "status": "pass" },
+    "phase5_linking": { "score": 9, "max": 10, "status": "pass" },
+    "phase6_technical": { "score": 9, "max": 10, "status": "pass" },
+    "phase7a_geo": { "score": 7, "max": 7, "status": "pass" },
+    "phase7b_aio": { "score": 8, "max": 8, "status": "pass" }
+  },
+  "critical_issues": [],
+  "warnings": [
+    "no first-hand experience or case study from author (Phase 3)",
+    "Organization schema missing sameAs and logo fields (Phase 6)"
+  ],
+  "suggestions": [
+    "add TikTok LIVE section (growing feature 2025-2026)",
+    "author adds personal experience paragraph to Roadmap or Mistakes section",
+    "add sameAs and logo fields to Organization schema"
+  ],
+  "improve_history": [
+    { "round": 0, "score": 83, "date": "2026-05-10" },
+    { "round": 1, "score": 89, "delta": 6, "fixes": [
+      "meta description trimmed to 156 chars",
+      "embedded 2 additional internal links in body (kiem-tien-voi-tiktok, tiktok-shop-affiliate)",
+      "added hyperlinks to 3 sources (TikTok newsroom, Statista, Adobe)",
+      "added entity link for For You Page (Wikipedia)"
+    ]}
+  ]
+}

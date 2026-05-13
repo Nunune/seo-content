@@ -5,7 +5,7 @@ description: |
   Kích hoạt khi user yêu cầu "viết bài SEO", "viết content", "seo write",
   "tạo bài viết chuẩn SEO", "viết blog", "tạo content", "write article",
   "viết bài cho website", "tạo bài blog", "viết bài chuẩn Google".
-argument-hint: --keyword "từ khóa" [--research path/to/research.md] [--author "Tên, Chức danh"] [--draft path/to/draft.md] [--lang vi|en]
+argument-hint: --keyword "từ khóa" --category slug-linh-vuc [--research path/to/research.md] [--author "Tên, Chức danh"] [--draft path/to/draft.md] [--lang vi|en]
 allowed-tools: [WebSearch, WebFetch, Read, Write]
 ---
 
@@ -20,12 +20,13 @@ User đã gọi với: $ARGUMENTS
 
 Parse arguments:
 - `--keyword "X"` — **BẮT BUỘC**: từ khóa chính của bài viết
+- `--category slug` — **BẮT BUỘC**: lĩnh vực/danh mục (VD: `digital-marketing`, `gia-dung`, `bat-dong-san`, `social-media`)
 - `--research path` — đường dẫn file research brief từ `/seo-research` (nếu có)
 - `--author "Tên, Chức danh"` — thông tin tác giả (override default.json)
 - `--draft path` — đường dẫn draft có sẵn cần cải thiện (không viết từ đầu)
 - `--lang vi|en` — ngôn ngữ bài viết (mặc định: vi)
 
-Nếu không có `--keyword`, hỏi user trước khi tiếp tục.
+Nếu không có `--keyword` hoặc `--category`, hỏi user trước khi tiếp tục.
 
 ## Quy trình thực hiện
 
@@ -105,7 +106,10 @@ Viết bài theo cấu trúc dưới đây. **Áp dụng nghiêm ngặt mọi ng
 Tạo slug từ keyword: ASCII, gạch ngang, không dấu, không stopword.
 Ví dụ: "hướng dẫn học lái xe ô tô 2025" → `hoc-lai-xe-o-to-2025`
 
-Lưu tại: `D:\Nunu-Claude\seo_content\output\draft_{slug}.md`
+Thư mục bài viết: `D:\Nunu-Claude\seo_content\output\{category}\{slug}\`
+Tạo thư mục nếu chưa có (dùng PowerShell `New-Item -ItemType Directory -Force`).
+
+Lưu tại: `D:\Nunu-Claude\seo_content\output\{category}\{slug}\draft.md`
 
 ## Định dạng file output
 
@@ -200,4 +204,4 @@ Sau khi lưu file, báo cáo:
 - Tiêu đề được chọn
 - Danh sách TODO cần làm trước khi đăng
 - Schema types gợi ý cần cài
-- Gợi ý: "Dùng `/seo-audit --file seo_content/output/draft_{slug}.md` để kiểm tra chất lượng trước khi đăng"
+- Gợi ý: "Dùng `/seo-audit --file seo_content/output/{category}/{slug}/draft.md --keyword "{keyword}"` để kiểm tra chất lượng trước khi đăng"

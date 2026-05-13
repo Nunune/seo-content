@@ -1,0 +1,46 @@
+{
+  "keyword": "mẹo dựng video TikTok nhanh với CapCut",
+  "source": "seo_content/output/social-media/meo-dung-video-tiktok-nhanh-capcut/draft.md",
+  "audited_at": "2026-05-10T00:00:00+07:00",
+  "total_score": 87,
+  "grade": "pass",
+  "phases": {
+    "phase1_research": { "score": 8, "max": 10, "status": "pass" },
+    "phase2_structure": { "score": 14, "max": 15, "status": "pass" },
+    "phase3_eeeat": { "score": 26, "max": 30, "status": "pass" },
+    "phase4_media": { "score": 7, "max": 10, "status": "pass" },
+    "phase5_linking": { "score": 9, "max": 10, "status": "pass" },
+    "phase6_technical": { "score": 9, "max": 10, "status": "pass" },
+    "phase7a_geo": { "score": 7, "max": 7, "status": "pass" },
+    "phase7b_aio": { "score": 7, "max": 8, "status": "pass" }
+  },
+  "critical_issues": [],
+  "warnings": [
+    "bảng thời gian là số liệu ước tính, không có nguồn độc lập",
+    "ảnh cần tạo thực tế (hiện là image blocks)",
+    "phase7b: thiếu Disambiguation paragraph"
+  ],
+  "suggestions": [
+    "tác giả xác nhận số liệu thời gian trong bảng so sánh",
+    "thêm đoạn disambiguation: mẹo cho người mới vs creator đã có kênh",
+    "thêm TikTok Wikipedia entity link ở lần đề cập đầu"
+  ],
+  "improve_history": [
+    {
+      "round": 0,
+      "score": 83,
+      "fixes": []
+    },
+    {
+      "round": 1,
+      "score": 87,
+      "fixes": [
+        "added xay-kenh internal link in Mẹo 2 body",
+        "added kiem-tien internal link in conclusion",
+        "added first-hand experience paragraph (Auto Caption batch test)",
+        "phase5_linking: 7→9 (4 embedded internal links)",
+        "phase3_eeeat: 25→26 (first-hand experience added)"
+      ]
+    }
+  ]
+}

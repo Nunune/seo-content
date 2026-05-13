@@ -1,0 +1,45 @@
+{
+  "url": "https://seongon.com/dao-tao/seo-aimax",
+  "keyword": null,
+  "checked_at": "2026-05-10T00:00:00+07:00",
+  "mobile": {
+    "performance": 33,
+    "accessibility": null,
+    "best_practices": null,
+    "seo": null,
+    "lcp_ms": 1985,
+    "inp_ms": 223,
+    "cls": 0.0,
+    "fcp_ms": 1564,
+    "ttfb_ms": 785,
+    "lcp_lab": "23.1 s",
+    "tbt_ms": 1070,
+    "cls_lab": 0,
+    "fcp_lab": "5.7 s",
+    "speed_index": "17.4 s",
+    "crux_overall": "AVERAGE"
+  },
+  "desktop": {
+    "performance": 41,
+    "accessibility": null,
+    "best_practices": null,
+    "seo": null,
+    "lcp_ms": 966,
+    "inp_ms": 95,
+    "cls": 0.0,
+    "fcp_ms": 747,
+    "ttfb_ms": null,
+    "lcp_lab": "1.7 s",
+    "tbt_ms": 1950,
+    "cls_lab": 0.263,
+    "fcp_lab": "0.6 s",
+    "speed_index": "3.9 s",
+    "crux_overall": "FAST"
+  },
+  "top_opportunities": [
+    { "title": "Reduce unused JavaScript", "savings": "~3,964 KiB (mobile)" },
+    { "title": "Reduce unused CSS", "savings": "~95 KiB (mobile)" },
+    { "title": "Minify JavaScript", "savings": "~13 KiB" }
+  ],
+  "grade": "poor"
+}

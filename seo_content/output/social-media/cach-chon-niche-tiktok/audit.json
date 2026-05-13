@@ -1,0 +1,49 @@
+{
+  "keyword": "cách chọn niche TikTok",
+  "source": "seo_content/output/social-media/cach-chon-niche-tiktok/draft.md",
+  "audited_at": "2026-05-10T00:00:00+07:00",
+  "total_score": 86,
+  "grade": "pass",
+  "phases": {
+    "phase1_research": { "score": 8, "max": 10, "status": "pass" },
+    "phase2_structure": { "score": 14, "max": 15, "status": "pass" },
+    "phase3_eeeat": { "score": 24, "max": 30, "status": "pass" },
+    "phase4_media": { "score": 7, "max": 10, "status": "pass" },
+    "phase5_linking": { "score": 9, "max": 10, "status": "pass" },
+    "phase6_technical": { "score": 9, "max": 10, "status": "pass" },
+    "phase7a_geo": { "score": 7, "max": 7, "status": "pass" },
+    "phase7b_aio": { "score": 8, "max": 8, "status": "pass" }
+  },
+  "critical_issues": [],
+  "warnings": [
+    "no first-hand experience or case study",
+    "ảnh cần chụp thực tế (không tự động tạo được)"
+  ],
+  "suggestions": [
+    "tác giả thêm 1 ví dụ kênh micro-niche thực tế tại VN",
+    "xác nhận lại 30 niche theo tháng đăng bài"
+  ],
+  "improve_history": [
+    {
+      "round": 0,
+      "score": 79,
+      "fixes": []
+    },
+    {
+      "round": 1,
+      "score": 86,
+      "fixes": [
+        "removed unsourced '70% kênh thất bại' stat",
+        "added TikTok Wikipedia entity link (first mention)",
+        "added TikTok Creator Center hyperlink",
+        "added meta description CTA verb",
+        "embedded CapCut internal link in Tiêu chí 3 section",
+        "embedded kiem-tien internal link in kết luận",
+        "phase5_linking: 5→9 (3 embedded links)",
+        "phase7a_geo: 6→7 (stat issue resolved)",
+        "phase7b_aio: 7→8 (entity links added)",
+        "phase2_structure: 13→14 (meta CTA fixed)"
+      ]
+    }
+  ]
+}

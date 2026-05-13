@@ -113,9 +113,11 @@ Tạo slug:
 - Nếu có `--keyword`: dùng keyword → ASCII, gạch ngang
 - Nếu không có: lấy hostname của URL (VD: `example-com`)
 
-Lưu 2 file:
-- `D:\Nunu-Claude\seo_content\output\pagespeed_{slug}.md`
-- `D:\Nunu-Claude\seo_content\output\pagespeed_{slug}.json`
+Lưu 2 file vào thư mục shared (không gắn với bài viết cụ thể):
+- `D:\Nunu-Claude\seo_content\output\_shared\pagespeed\{slug}.md`
+- `D:\Nunu-Claude\seo_content\output\_shared\pagespeed\{slug}.json`
+
+Tạo thư mục nếu chưa có.
 
 ## Định dạng file pagespeed_{slug}.md
 

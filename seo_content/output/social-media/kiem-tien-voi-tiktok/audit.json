@@ -1,0 +1,32 @@
+{
+  "keyword": "kiếm tiền với tiktok",
+  "source": "seo_content/output/social-media/kiem-tien-voi-tiktok/draft.md",
+  "audited_at": "2026-05-10T00:00:00+07:00",
+  "total_score": 85,
+  "grade": "pass",
+  "improve_log": [
+    { "round": 0, "score": 83, "note": "Vòng 0 — draft ban đầu. Phase 5 yếu do internal links chỉ trong comment, 4 phantom links." },
+    { "round": 1, "score": 85, "note": "Vòng 1 — nhúng 4 internal links hợp lệ vào body (xay-kenh, meo-dung-video, cach-chon-niche, huong-dan-capcut). Phase 5: 5→9." }
+  ],
+  "phases": {
+    "phase1_research": { "score": 8, "max": 10, "status": "pass" },
+    "phase2_structure": { "score": 13, "max": 15, "status": "pass" },
+    "phase3_eeeat": { "score": 26, "max": 30, "status": "pass" },
+    "phase4_media": { "score": 7, "max": 10, "status": "warn" },
+    "phase5_linking": { "score": 9, "max": 10, "status": "pass" },
+    "phase6_technical": { "score": 9, "max": 10, "status": "pass" },
+    "phase7a_geo": { "score": 6, "max": 7, "status": "pass" },
+    "phase7b_aio": { "score": 7, "max": 8, "status": "pass" }
+  },
+  "critical_issues": [],
+  "warnings": [
+    "Phase 4: Ảnh vẫn là comment placeholder — cần tạo ảnh thực tế (3 files đã có trong thư mục images/)",
+    "Phase 3: Thiếu case study first-hand từ tác giả — cần tác giả bổ sung",
+    "Phase 7B: Chưa có original research (khảo sát/dữ liệu độc quyền)"
+  ],
+  "suggestions": [
+    "Thêm case study cụ thể: 1 creator VN kiếm được X triệu/tháng bằng phương pháp nào",
+    "Cập nhật khi Creativity Program mở tại VN",
+    "Thêm video embed hoặc screenshot minh họa"
+  ]
+}

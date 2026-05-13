@@ -1,0 +1,47 @@
+{
+  "keyword": "khám sức khỏe tổng quát",
+  "source": "output/suc-khoe/kham-suc-khoe-tong-quat/draft.md",
+  "audited_at": "2026-05-11T00:00:00+07:00",
+  "total_score": 85,
+  "grade": "pass",
+  "phases": {
+    "phase1_research":   { "score": 9,  "max": 10, "status": "pass" },
+    "phase2_structure":  { "score": 14, "max": 15, "status": "pass" },
+    "phase3_eeeat":      { "score": 27, "max": 30, "status": "pass" },
+    "phase4_media":      { "score": 6,  "max": 10, "status": "warn" },
+    "phase5_linking":    { "score": 6,  "max": 10, "status": "warn" },
+    "phase6_technical":  { "score": 9,  "max": 10, "status": "pass" },
+    "phase7a_geo":       { "score": 6,  "max": 7,  "status": "pass" },
+    "phase7b_aio":       { "score": 8,  "max": 8,  "status": "pass" }
+  },
+  "improve_log": [
+    {
+      "round": 0,
+      "score": 73,
+      "issues": ["No external link URLs", "No JSON-LD schema", "No images", "Unsourced '80%' stat"]
+    },
+    {
+      "round": 1,
+      "score": 85,
+      "delta": 12,
+      "fixes": [
+        "Phase 3 +3: Fixed '80%' stat with moh.gov.vn source; added visible author block; added original cost comparison data table",
+        "Phase 4 +2: Updated 4 image comments with proper File: and Alt: attributes",
+        "Phase 5 +3: Added 3 real external links — moh.gov.vn x2 (74% NCD stat, 80% cardiovascular stat), who.int x1 (screening)",
+        "Phase 6 +3: Added full JSON-LD schema (Article + FAQPage) in comment block",
+        "Phase 7B +1: Added original research element (chi phi kham dinh ky vs dieu tri benh muon comparison table)"
+      ]
+    }
+  ],
+  "critical_issues": [],
+  "warnings": [
+    "Phase 4 (6/10) — 4 image comments present with proper alt/file attrs but no actual image files yet; run /seo-image to generate",
+    "Phase 5 (6/10) — No internal links (health cluster not yet in content-index); add when related articles are written"
+  ],
+  "suggestions": [
+    "Tac gia them trai nghiem first-hand cu the (case study thuc te) → Phase 3 co the len 29-30/30",
+    "Tao anh thuc bang /seo-image → Phase 4 co the len 8-9/10",
+    "Viet bai suc khoe cluster (bao hiem, dinh duong, tap the duc) → internal links → Phase 5 len 9/10",
+    "Xac nhan JSON-LD duoc nhung vao CMS truoc khi dang"
+  ]
+}

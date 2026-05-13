@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Temp files từ export pipeline
+_preprocessed.md
+**/preprocessed.md
+
+# Virtual environments
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Playwright artifacts
+playwright-report/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Sensitive config — chứa API key và credentials
+profiles/default.json

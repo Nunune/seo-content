@@ -5,7 +5,7 @@ description: |
   Kích hoạt khi user hỏi về "nghiên cứu từ khóa", "phân tích đối thủ", "seo research",
   "tìm keyword", "phân tích SERP", "content gap", "research bài viết", "tìm ý tưởng content",
   "keyword research", "phân tích từ khóa", "lên brief SEO", "outline bài viết".
-argument-hint: --keyword "từ khóa" [--competitor URL1 URL2...] [--lang vi|en]
+argument-hint: --keyword "từ khóa" --category slug-linh-vuc [--competitor URL1 URL2...] [--lang vi|en]
 allowed-tools: [WebSearch, WebFetch, Read, Write]
 ---
 
@@ -20,10 +20,11 @@ User đã gọi với: $ARGUMENTS
 
 Parse arguments:
 - `--keyword "X"` — **BẮT BUỘC**: từ khóa chính cần nghiên cứu
+- `--category slug` — **BẮT BUỘC**: lĩnh vực/danh mục (VD: `digital-marketing`, `gia-dung`, `bat-dong-san`, `social-media`)
 - `--competitor URL1 URL2...` — URL bài viết đối thủ muốn phân tích (tối đa 5)
 - `--lang vi|en` — ngôn ngữ output (mặc định: vi)
 
-Nếu không có `--keyword`, hỏi user từ khóa trước khi tiếp tục.
+Nếu không có `--keyword` hoặc `--category`, hỏi user trước khi tiếp tục.
 
 ## Quy trình thực hiện
 
@@ -95,7 +96,10 @@ Dùng thông tin này để customize outline phù hợp với thương hiệu.
 Tạo slug từ keyword (chuyển sang ASCII, thay dấu cách bằng `-`, bỏ dấu tiếng Việt).
 Ví dụ: "học lái xe ô tô" → `hoc-lai-xe-o-to`
 
-Lưu file tại: `D:\Nunu-Claude\seo_content\output\research_{slug}.md`
+Thư mục bài viết: `D:\Nunu-Claude\seo_content\output\{category}\{slug}\`
+Tạo thư mục nếu chưa có.
+
+Lưu file tại: `D:\Nunu-Claude\seo_content\output\{category}\{slug}\research.md`
 
 ## Định dạng file output
 
@@ -213,4 +217,4 @@ Sau khi lưu file, báo cáo ngắn gọn:
 - Search intent được xác định
 - Số đối thủ đã phân tích
 - Top 3 content gap quan trọng nhất
-- Gợi ý: "Dùng `/seo-write --keyword "{keyword}" --research seo_content/output/research_{slug}.md` để viết bài"
+- Gợi ý: "Dùng `/seo-write --keyword "{keyword}" --category {category} --research seo_content/output/{category}/{slug}/research.md` để viết bài"
