@@ -24,3 +24,7 @@ playwright-report/
 
 # Sensitive config — chứa API key và credentials
 profiles/default.json
+
+# Conversation exports — chứa nội dung trò chuyện riêng tư
+conversation-export*.md
+conversation-export*.txt

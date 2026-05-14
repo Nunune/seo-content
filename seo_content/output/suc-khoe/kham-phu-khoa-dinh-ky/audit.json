@@ -1,0 +1,29 @@
+{
+  "keyword": "khám phụ khoa định kỳ",
+  "slug": "kham-phu-khoa-dinh-ky",
+  "category": "suc-khoe",
+  "initial_score": 86,
+  "total_score": 90,
+  "target": 90,
+  "rounds": 1,
+  "phases": {
+    "phase1": {"score": 10, "max": 10, "status": "pass", "notes": "Research đầy đủ, 7 PAA, 5 competitors, 5 content gap, WHO-IS-THIS-FOR model"},
+    "phase2": {"score": 14, "max": 15, "status": "pass", "notes": "Title 58 ký tự, meta 155 ký tự, slug chuẩn, H2/H3 phân cấp logic theo WHO-IS-THIS-FOR"},
+    "phase3": {"score": 27, "max": 30, "status": "pass", "notes": "WHO-IS-THIS-FOR model 4 nhóm, PRINCIPLE-FIRST giải thích cơ chế phát hiện sớm ung thư, medical disclaimer, Phân tích từ tác giả, 5 bảng so sánh, 2 external links (WHO, Vinmec)"},
+    "phase4": {"score": 8, "max": 10, "status": "pass", "notes": "1 image: lich-kham-phu-khoa.png (infographic 4 nhóm với tần suất)"},
+    "phase5": {"score": 9, "max": 10, "status": "pass", "notes": "2 external links (WHO, Vinmec), 2 internal links (kham-suc-khoe-tong-quat, bo-sung-vitamin-c-qua-trai-cay) active trong body"},
+    "phase6": {"score": 10, "max": 10, "status": "pass", "notes": "JSON-LD MedicalWebPage + FAQPage, medicalAudience và MedicalProcedure entity"},
+    "phase7a": {"score": 6, "max": 7, "status": "pass", "notes": "BLUF per section, 5 bảng, số liệu có nguồn (WHO cervical cancer data)"},
+    "phase7b": {"score": 6, "max": 8, "status": "warn", "notes": "TL;DR, Direct Answer, WHO-IS-THIS-FOR table, Disambiguation (khám PK vs khám tổng quát), Freshness — thiếu 1 checklist self-assessment"}
+  },
+  "critical_issues": [],
+  "warnings": [
+    "Phase 7B: Thiếu checklist tự đánh giá 'tôi có cần đi khám ngay không?' dạng Yes/No",
+    "Phase 3: Nên có bác sĩ sản phụ khoa review nội dung y tế trước khi đăng"
+  ],
+  "suggestions": [
+    "Thêm checklist 5 câu Yes/No: các dấu hiệu cần đi khám ngay không chờ lịch định kỳ",
+    "Bác sĩ sản phụ khoa review và bổ sung góc nhìn chuyên môn",
+    "Cân nhắc thêm thông tin về vaccine HPV (liên quan chặt với tầm soát ung thư cổ tử cung)"
+  ]
+}

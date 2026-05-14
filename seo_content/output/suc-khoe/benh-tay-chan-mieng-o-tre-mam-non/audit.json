@@ -1,0 +1,29 @@
+{
+  "keyword": "bệnh tay chân miệng ở trẻ mầm non",
+  "slug": "benh-tay-chan-mieng-o-tre-mam-non",
+  "category": "suc-khoe",
+  "initial_score": 85,
+  "total_score": 91,
+  "target": 90,
+  "rounds": 1,
+  "phases": {
+    "phase1": {"score": 10, "max": 10, "status": "pass", "notes": "Research đầy đủ, 7 PAA, 5 competitors, 5 content gap, outline WHO-IS-THIS-FOR"},
+    "phase2": {"score": 15, "max": 15, "status": "pass", "notes": "Title 56 ký tự, meta 158 ký tự, slug chuẩn, H2/H3 logic theo timeline"},
+    "phase3": {"score": 28, "max": 30, "status": "pass", "notes": "WHO-IS-THIS-FOR model, PRINCIPLE-FIRST giải thích cơ chế EV71, medical disclaimer, Phân tích từ tác giả, 4 comparison tables, disambiguation tay chân miệng vs sốt phát ban, 2 external hyperlinks"},
+    "phase4": {"score": 8, "max": 10, "status": "pass", "notes": "1 image block: giai-doan-tay-chan-mieng.png (timeline 3 giai đoạn)"},
+    "phase5": {"score": 9, "max": 10, "status": "pass", "notes": "2 external links (Bộ Y tế, VNVC), 2 internal links (bo-sung-vitamin-c-qua-trai-cay, kham-suc-khoe-tong-quat) active trong body"},
+    "phase6": {"score": 10, "max": 10, "status": "pass", "notes": "JSON-LD MedicalWebPage + FAQPage schema, medicalAudience và MedicalCondition entity"},
+    "phase7a": {"score": 6, "max": 7, "status": "pass", "notes": "BLUF per section, 4 bảng so sánh, số liệu 90% hồi phục/7-10 ngày có nguồn"},
+    "phase7b": {"score": 5, "max": 8, "status": "warn", "notes": "TL;DR, Direct Answer, Comparison Table WHO-IS-THIS-FOR, Disambiguation, Freshness — thiếu Checklist dạng câu hỏi Yes/No tự đánh giá"}
+  },
+  "critical_issues": [],
+  "warnings": [
+    "Phase 7B: Thiếu checklist tự đánh giá mức độ nặng dạng Yes/No — hữu ích cho AI Overview",
+    "Phase 3: Nên có bác sĩ chuyên khoa nhi review trước khi đăng (y tế nhạy cảm)"
+  ],
+  "suggestions": [
+    "Thêm checklist 5 câu Yes/No để phụ huynh tự đánh giá: con tôi có cần nhập viện không?",
+    "Bác sĩ nhi review nội dung liều thuốc và dấu hiệu nguy hiểm",
+    "Test MedicalWebPage schema tại Google Rich Results Test"
+  ]
+}

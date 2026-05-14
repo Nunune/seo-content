@@ -1,0 +1,30 @@
+{
+  "keyword": "bổ sung vitamin C qua trái cây",
+  "slug": "bo-sung-vitamin-c-qua-trai-cay",
+  "category": "suc-khoe",
+  "initial_score": 75,
+  "total_score": 90,
+  "target": 90,
+  "rounds": 1,
+  "phases": {
+    "phase1": {"score": 9, "max": 10, "status": "pass", "notes": "Research đầy đủ, PAA, competitor analysis, content gap"},
+    "phase2": {"score": 15, "max": 15, "status": "pass", "notes": "Title 59 ký tự (trong ngưỡng 50-60), cấu trúc H2/H3 tốt, meta description đủ CTA"},
+    "phase3": {"score": 28, "max": 30, "status": "pass", "notes": "Authority note thêm, phân tích giá gốc của tác giả, nguồn uy tín có hyperlink đầy đủ"},
+    "phase4": {"score": 6, "max": 10, "status": "warn", "notes": "2 image blocks OK nhưng chưa có ảnh thật — cần chạy generate_images.py"},
+    "phase5": {"score": 9, "max": 10, "status": "pass", "notes": "5 external citations có hyperlink, internal link kham-suc-khoe-tong-quat đã active trong body"},
+    "phase6": {"score": 9, "max": 10, "status": "pass", "notes": "JSON-LD Article + FAQPage + Author + Organization schema đầy đủ. Chưa test Google Rich Results."},
+    "phase7a": {"score": 6, "max": 7, "status": "pass", "notes": "BLUF, Q&A, bảng so sánh, số liệu tốt"},
+    "phase7b": {"score": 8, "max": 8, "status": "pass", "notes": "TL;DR, Direct Answer, disambiguation (C tự nhiên vs tổng hợp), definition block, freshness đầy đủ"}
+  },
+  "critical_issues": [],
+  "warnings": [
+    "Phase 4: Chưa có ảnh thật — cần chạy generate_images.py để tạo biểu đồ",
+    "Phase 6: Chưa test JSON-LD bằng Google Rich Results Test sau khi đăng"
+  ],
+  "suggestions": [
+    "Chạy generate_images.py để tạo biểu đồ hàm lượng vitamin C",
+    "Test schema tại https://search.google.com/test/rich-results sau khi đăng",
+    "Xem xét thêm HowTo schema nếu bổ sung phần hướng dẫn chế biến chi tiết hơn",
+    "Nhờ chuyên gia dinh dưỡng review để tăng E-E-A-T thêm"
+  ]
+}

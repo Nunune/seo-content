@@ -4,6 +4,8 @@ Bộ công cụ viết và tối ưu nội dung SEO theo chuẩn Google 2025-202
 
 ## Slash commands
 
+### SEO Pipeline (viết & tối ưu bài blog)
+
 ```
 /seo-pipeline  --keyword "từ khóa" --category slug [--target 85] [--max-iter 3] [--competitor URLs] [--author "Tên"] [--lang vi|en]
 /seo-research  --keyword "từ khóa" --category slug-linh-vuc [--competitor URL1 URL2...] [--lang vi|en]
@@ -14,16 +16,45 @@ Bộ công cụ viết và tối ưu nội dung SEO theo chuẩn Google 2025-202
 /seo-webp      --slug {slug} --category {slug-linh-vuc} | --input path/ [--quality 85] [--keep-original]
 /seo-export    --draft output/{category}/{slug}/draft.md [--font Arial|Times]
 /seo-pagespeed --url https://example.com [--strategy mobile|desktop|both]
+/seo-review    --keyword "từ khóa" --category slug --slug bai-viet-slug
+/seo-progress  [--category slug] [--stage 0-5] [--flag-low 75] [--save]
 ```
+
+### Content Writing (viết content theo framework)
+
+```
+/content-seo      --keyword "X" --category slug [--format LISTICLE|HOW-TO|SKYSCRAPER|PILLAR] [--length 1500|3000|5000] [--competitor URLs] [--author "Tên, Chức danh"] [--lang vi|en]
+/content-ai       --keyword "X" --category slug [--questions "Q1|Q2|Q3"] [--author "Tên, Chức danh"] [--lang vi|en]
+/content-sales    --keyword "X" --category slug [--format AIDA|PAS|BAB|PASTOR] [--product "tên SP"] [--audience "đối tượng"] [--tone "giọng văn"] [--length short|medium|long] [--lang vi|en]
+/content-story    --keyword "X" --category slug [--format STAR|HERO] [--subject "nhân vật"] [--outcome "kết quả"] [--timeframe "thời gian"] [--lang vi|en]
+/content-product  --keyword "X" --category slug [--format FAB|PYRAMID] [--product "tên SP"] [--features "feat1 | feat2"] [--event "sự kiện"] [--lang vi|en]
+/content-video    --keyword "X" --category slug [--duration 15|30|60] [--platform tiktok|reels|shorts] [--cta "hành động"] [--lang vi|en]
+/content-headline --keyword "X" [--headline "tiêu đề cần đánh giá"] [--count 5] [--type blog|ad|email|social] [--lang vi|en]
+/content-intro    --keyword "X" [--draft path/to/draft.md] [--tone "giọng văn"] [--variants 3] [--lang vi|en]
+```
+
+| Skill | Framework | Output |
+|-------|-----------|--------|
+| `/content-seo` | LISTICLE, HOW-TO, SKYSCRAPER, PILLAR | `draft.md` → pipeline-compatible |
+| `/content-ai` | FAQ-FIRST (AI Overviews, GEO) | `draft.md` → pipeline-compatible |
+| `/content-sales` | AIDA, PAS, BAB, PASTOR | `sales-{slug}.md` |
+| `/content-story` | STAR, HERO'S JOURNEY | `story-{slug}.md` |
+| `/content-product` | FAB, INVERTED PYRAMID (PR) | `product-{slug}.md` |
+| `/content-video` | QUEST (TikTok/Reels/Shorts) | `script-{slug}.md` |
+| `/content-headline` | 4U scoring + alternatives | console |
+| `/content-intro` | APP (3 variants) | console / prepend draft |
 
 ## Sub-agents (pipeline điều phối)
 
 Agents tự động chuỗi nhiều skill với 1 lệnh duy nhất — không cần gọi từng skill riêng lẻ:
 
-| Agent | Cú pháp | Skills được gọi |
-|-------|---------|-----------------|
+| Agent | Cú pháp | Chức năng |
+|-------|---------|-----------|
 | **seo-writer** | `--keyword "X" --category slug [--competitor URLs] [--author "Tên, Chức danh"]` | seo-research → seo-write |
 | **seo-auditor** | `--draft path --keyword "X" [--target 85] [--max-iter 3]` | seo-audit (baseline) → seo-improve |
+| **seo-review** | `--keyword "X" --category slug --slug bai-viet-slug` | QA pipeline 1 bài: report card A-F cho research/writing/audit/improve |
+| **seo-progress** | `[--category slug] [--stage 0-5] [--flag-low 75] [--save]` | Dashboard toàn bộ: stage từng bài + priority queue việc cần làm |
+| **seo-batch** | `--sheet "URL" [--worksheet "Tab"] [--limit N] [--dry-run] [--target 85]` | Batch pipeline: đọc Sheet → research → write → improve → Drive upload → cập nhật Sheet |
 
 ### Pipeline 2-agent hoàn chỉnh (từ từ khóa đến .docx)
 

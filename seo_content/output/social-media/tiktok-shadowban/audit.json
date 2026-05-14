@@ -1,0 +1,29 @@
+{
+  "keyword": "tiktok shadowban",
+  "slug": "tiktok-shadowban",
+  "category": "social-media",
+  "initial_score": 90,
+  "total_score": 90,
+  "target": 90,
+  "rounds": 0,
+  "phases": {
+    "phase1": {"score": 9, "max": 10, "status": "pass", "notes": "Keyword map đầy đủ, 5 PAA, 3 đối thủ phân tích, 7 content gap xác định rõ (Trust Score mechanism, 3 loại shadowban, Analytics verification)"},
+    "phase2": {"score": 14, "max": 15, "status": "pass", "notes": "Title 53 ký tự, meta 156 ký tự, slug chuẩn, H2/H3 phân cấp logic theo PRINCIPLE-FIRST model"},
+    "phase3": {"score": 26, "max": 30, "status": "pass", "notes": "PRINCIPLE-FIRST model Trust Score, 3 bảng (loại shadowban, analytics traffic, chẩn đoán), 5 FAQ, authority note, 7 nguyên nhân + 3 giai đoạn recovery, 4 internal hyperlinks active; thiếu stat với format (Nguồn, năm)"},
+    "phase4": {"score": 7, "max": 10, "status": "pass", "notes": "1 image block đầy đủ Alt + File (trust-score-tiktok-shadowban.png - diagram)"},
+    "phase5": {"score": 10, "max": 10, "status": "pass", "notes": "1 external link TikTok Support chính thức, 4 internal links active: video-tiktok-0-view, vi-pham-chinh-sach-tiktok, cach-viet-caption-tiktok, xay-kenh-tiktok-tu-con-so-0"},
+    "phase6": {"score": 10, "max": 10, "status": "pass", "notes": "JSON-LD Article + FAQPage + HowTo schema đầy đủ, Author schema, Publisher schema, datePublished + dateModified"},
+    "phase7a": {"score": 7, "max": 7, "status": "pass", "notes": "BLUF per section, Q&A structure, definitions (Trust Score, shadowban types, hashtag shadowban), số liệu cụ thể, bảng so sánh"},
+    "phase7b": {"score": 7, "max": 8, "status": "pass", "notes": "TL;DR box, Direct Answer sau H2, Question-based headings, Definition blocks, Comparison tables, Disambiguation (3 loại vs 0 view), Freshness 14/05/2026; thiếu stat (Nguồn, năm) strict format"}
+  },
+  "critical_issues": [],
+  "warnings": [
+    "Phase 3 + 7B: Số liệu (14-28 ngày, 80-90%, 100-500 người) chưa có format (Nguồn, năm) — TikTok không công bố chính thức nên ghi rõ là ước tính từ cộng đồng creator",
+    "Phase 4: Chỉ có 1 ảnh diagram — nên thêm 1 ảnh nữa cho section Analytics (bảng traffic source)"
+  ],
+  "suggestions": [
+    "Thêm case study thực tế: kênh TikTok bị shadowban → đã gỡ trong bao nhiêu ngày bằng quy trình nào",
+    "Thêm ảnh thứ 2: bảng Analytics traffic source visualization (chart dạng stacked bar)",
+    "Cập nhật với TikTok Newsroom link nếu có thông báo chính thức về content restriction"
+  ]
+}

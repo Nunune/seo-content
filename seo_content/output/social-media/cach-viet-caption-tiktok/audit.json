@@ -1,0 +1,29 @@
+{
+  "keyword": "cách viết caption TikTok",
+  "slug": "cach-viet-caption-tiktok",
+  "category": "social-media",
+  "initial_score": 86,
+  "total_score": 90,
+  "target": 90,
+  "rounds": 1,
+  "phases": {
+    "phase1": {"score": 10, "max": 10, "status": "pass", "notes": "Research đầy đủ, 7 PAA, 5 competitors, 5 content gap"},
+    "phase2": {"score": 15, "max": 15, "status": "pass", "notes": "Title 51 ký tự, meta 157 ký tự, slug chuẩn, H2/H3 logic phân cấp"},
+    "phase3": {"score": 27, "max": 30, "status": "pass", "notes": "PRINCIPLE-FIRST model, authority note, 2 Phân tích từ tác giả, disambiguation 4 mục tiêu caption, 2 external hyperlinks (TikTok for Business, TikTok Newsroom)"},
+    "phase4": {"score": 8, "max": 10, "status": "pass", "notes": "1 image block defined — co-che-caption-tiktok.png (diagram cơ chế thuật toán)"},
+    "phase5": {"score": 9, "max": 10, "status": "pass", "notes": "2 external links (TikTok for Business, TikTok Newsroom), 2 internal links (xay-kenh-tiktok-tu-con-so-0, cach-tang-tuong-tac-page-facebook) active trong body"},
+    "phase6": {"score": 10, "max": 10, "status": "pass", "notes": "JSON-LD Article + FAQPage + HowTo schema đầy đủ"},
+    "phase7a": {"score": 6, "max": 7, "status": "pass", "notes": "BLUF per section, Q&A chuẩn, bảng so sánh hook/hashtag, định nghĩa thuật ngữ"},
+    "phase7b": {"score": 5, "max": 8, "status": "warn", "notes": "TL;DR, Direct Answer, Disambiguation, HowTo schema, Freshness — thiếu Comparison Table 'Phù hợp cho ai' cho caption theo mục tiêu"}
+  },
+  "critical_issues": [],
+  "warnings": [
+    "Phase 7B: Chưa có Comparison Table với cột 'Phù hợp cho ai' so sánh 4 loại caption",
+    "Phase 3: Có thể thêm case study số liệu thực từ tác giả về hiệu quả caption"
+  ],
+  "suggestions": [
+    "Thêm bảng so sánh 4 loại caption (viral/follow/bán hàng/SEO) với cột Phù hợp cho ai",
+    "Thêm case study: kết quả cụ thể từ caption tối ưu so với caption generic",
+    "Test JSON-LD schema tại Google Rich Results Test sau khi đăng"
+  ]
+}

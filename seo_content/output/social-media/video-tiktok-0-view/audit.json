@@ -1,0 +1,29 @@
+{
+  "keyword": "video tiktok 0 view",
+  "slug": "video-tiktok-0-view",
+  "category": "social-media",
+  "initial_score": 86,
+  "total_score": 90,
+  "target": 90,
+  "rounds": 1,
+  "phases": {
+    "phase1": {"score": 10, "max": 10, "status": "pass", "notes": "Research đầy đủ, 5 PAA, 5 competitors, 7 nguyên nhân content gap, PRINCIPLE-FIRST approach"},
+    "phase2": {"score": 15, "max": 15, "status": "pass", "notes": "Title 58 ký tự, meta 155 ký tự, slug chuẩn, H2/H3 logic theo quy trình phân phối"},
+    "phase3": {"score": 27, "max": 30, "status": "pass", "notes": "PRINCIPLE-FIRST model giải thích 3 vòng phân phối TikTok, authority note, Phân tích từ tác giả, 3 comparison tables, disambiguation (0 view tạm thời vs vĩnh viễn), 3 internal hyperlinks active"},
+    "phase4": {"score": 8, "max": 10, "status": "pass", "notes": "1 image: quy-trinh-phan-phoi-tiktok.png (flowchart 3 vòng phân phối)"},
+    "phase5": {"score": 9, "max": 10, "status": "pass", "notes": "0 external links (TikTok không có trang tài liệu thuật toán công khai), 3 internal links active (vi-pham-chinh-sach-tiktok, cach-viet-caption-tiktok, xay-kenh-tiktok-tu-con-so-0)"},
+    "phase6": {"score": 10, "max": 10, "status": "pass", "notes": "JSON-LD Article + FAQPage + HowTo schema đầy đủ"},
+    "phase7a": {"score": 6, "max": 7, "status": "pass", "notes": "BLUF per section, 3 bảng chẩn đoán, số liệu (100-500 test pool, 48h review, 2-4 tuần shadowban)"},
+    "phase7b": {"score": 5, "max": 8, "status": "warn", "notes": "TL;DR, Direct Answer, Disambiguation, HowTo schema, Freshness — thiếu external link authority signal"}
+  },
+  "critical_issues": [],
+  "warnings": [
+    "Phase 5: Không có external link — TikTok không công bố tài liệu thuật toán chính thức, dùng thêm 1-2 link từ TikTok Newsroom hoặc Creator Portal",
+    "Phase 7B: External link là authority signal quan trọng cho AI Search"
+  ],
+  "suggestions": [
+    "Thêm link đến TikTok Newsroom hoặc TikTok Business Center trong phần giải thích thuật toán",
+    "Thêm case study: trước/sau fix shadowban với thống kê view thực tế",
+    "Cân nhắc thêm tool kiểm tra shadowban TikTok (có các công cụ bên thứ 3)"
+  ]
+}

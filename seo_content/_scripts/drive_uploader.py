@@ -96,12 +96,34 @@ def get_credentials():
     return creds
 
 
+def delete_existing(service, file_name, folder_id):
+    """Xóa tất cả file trùng tên trong folder trước khi upload."""
+    query = f"name='{file_name}' and trashed=false"
+    if folder_id:
+        query += f" and '{folder_id}' in parents"
+    results = service.files().list(q=query, fields='files(id, name)').execute()
+    files = results.get('files', [])
+    for f in files:
+        service.files().delete(fileId=f['id']).execute()
+        print(f'[DEL] Đã xóa file cũ: {f["name"]} (id: {f["id"]})')
+    return len(files)
+
+
 def upload(file_path, folder_id, convert, creds):
     service = build('drive', 'v3', credentials=creds)
 
     file_name = os.path.basename(file_path)
     if convert:
         file_name = os.path.splitext(file_name)[0]
+
+    # Xóa file trùng tên trước khi upload
+    deleted = delete_existing(service, file_name, folder_id)
+    if deleted == 0:
+        print(f'[→] Uploading: {os.path.basename(file_path)}')
+    else:
+        print(f'[→] Re-uploading: {os.path.basename(file_path)} (đã xóa {deleted} file cũ)')
+    if folder_id:
+        print(f'[→] Folder: https://drive.google.com/drive/folders/{folder_id}')
 
     metadata = {'name': file_name}
     if folder_id:
@@ -110,10 +132,6 @@ def upload(file_path, folder_id, convert, creds):
         metadata['mimeType'] = GDOC_MIME
 
     media = MediaFileUpload(file_path, mimetype=DOCX_MIME, resumable=True)
-
-    print(f'[→] Uploading: {os.path.basename(file_path)}')
-    if folder_id:
-        print(f'[→] Folder: https://drive.google.com/drive/folders/{folder_id}')
 
     result = service.files().create(
         body=metadata,

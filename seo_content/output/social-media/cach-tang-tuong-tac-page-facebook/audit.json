@@ -1,0 +1,29 @@
+{
+  "keyword": "cách tăng tương tác page facebook",
+  "slug": "cach-tang-tuong-tac-page-facebook",
+  "category": "social-media",
+  "initial_score": 90,
+  "total_score": 90,
+  "target": 90,
+  "rounds": 0,
+  "phases": {
+    "phase1": {"score": 10, "max": 10, "status": "pass", "notes": "Research đầy đủ, PAA 7 câu hỏi, 3 competitors, 6 content gap"},
+    "phase2": {"score": 15, "max": 15, "status": "pass", "notes": "Title 50 ký tự, meta 155 ký tự, slug chuẩn, H2/H3 logic"},
+    "phase3": {"score": 27, "max": 30, "status": "pass", "notes": "PRINCIPLE-FIRST model, 2 Phân tích từ tác giả, authority note, disambiguation engagement bait, 3 external hyperlinks"},
+    "phase4": {"score": 6, "max": 10, "status": "warn", "notes": "1 image block — cần tạo sơ đồ thứ bậc tương tác"},
+    "phase5": {"score": 9, "max": 10, "status": "pass", "notes": "3 external links (Meta, Facebook Business), 2 internal links (content-marketing-la-gi, ung-dung-ai-vao-seo) active trong body"},
+    "phase6": {"score": 9, "max": 10, "status": "pass", "notes": "JSON-LD Article + FAQPage + HowTo schema đầy đủ"},
+    "phase7a": {"score": 6, "max": 7, "status": "pass", "notes": "BLUF per section, Q&A, tables, số liệu có nguồn"},
+    "phase7b": {"score": 8, "max": 8, "status": "pass", "notes": "TL;DR, Direct Answer, Disambiguation (engagement bait), PRINCIPLE-FIRST mechanism, HowTo schema"}
+  },
+  "critical_issues": [],
+  "warnings": [
+    "Phase 4: Chưa có ảnh sơ đồ thứ bậc tương tác — cần tạo bằng matplotlib hoặc diagram",
+    "Phase 3: Chưa có case study thực tế từ tác giả"
+  ],
+  "suggestions": [
+    "Tạo diagram thứ bậc tương tác Facebook dạng pyramid hoặc horizontal bar",
+    "Thêm case study: 1 fanpage cụ thể áp dụng PRINCIPLE-FIRST và kết quả sau 30 ngày",
+    "Test JSON-LD HowTo schema tại Google Rich Results Test sau khi đăng"
+  ]
+}
